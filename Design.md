@@ -9,10 +9,10 @@ The system:
 - Takes a **natural-language prompt describing an investing strategy**.
 - **Backtests** the strategy.
 - Runs a **debate**:
-  - one LLM defends/improves the strategy,
   - one LLM attacks it,
+  - one LLM defends/improves the strategy,
   - across multiple rounds with **decreasing contentiousness**.
-- Scores each round with a **logic / reasoning score**.
+- Scores each argument with a **logic / reasoning score**.
 - Feeds strategy, debate logs, scores, and backtest into a **Meta-LLM** that:
   - has access to **market data, past trends, news, and historical predictions/outcomes**,
   - synthesizes a refined strategy,
